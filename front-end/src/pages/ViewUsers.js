@@ -42,7 +42,7 @@ function ViewUsers(props) {
   }
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/tv_users`)
+      .get('http://localhost:4000/tv_users')
       .then((response) => {
         console.log(response.data)
         setUsers(response.data)

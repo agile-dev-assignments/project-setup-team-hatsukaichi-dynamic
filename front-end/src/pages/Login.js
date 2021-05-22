@@ -16,7 +16,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault()
     axios
-      .post(`http://localhost:4000/login`, {
+      .post('http://localhost:4000/login', {
         email: emailUser,
         password: passwordUser
       })
@@ -41,7 +41,7 @@ function Login() {
   //check if user is authorized (jwt is correct)
   const userAuthorized = () => {
     axios
-      .get(`http://localhost:4000/checkAuth`, {
+      .get('http://localhost:4000/checkAuth', {
         headers: {
           'x-access-token': localStorage.getItem('token')
         }

@@ -1,6 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react'
-import 'react-sticky-header/styles.css'
-import StickyHeader from 'react-sticky-header'
 import './Header.css'
 import Hamburger from './Hamburger'
 import logo from '../images/logo.png'

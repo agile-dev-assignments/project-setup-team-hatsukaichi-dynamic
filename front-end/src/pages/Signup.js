@@ -22,7 +22,7 @@ function Signup() {
       : setPasswordMismatch(false)
 
     axios
-      .post(`http://localhost:4000/register`, {
+      .post('http://localhost:4000/register', {
         username: usernameReg,
         email: emailReg,
         password: passwordReg

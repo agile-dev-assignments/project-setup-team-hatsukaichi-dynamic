@@ -68,7 +68,7 @@ const AllShows = (props) => {
   const history = useHistory()
 
   useEffect(() => {
-    axios(`http://${process.env.REACT_APP_BASE_URL}:4000/shows-trakt`)
+    axios('http://localhost:4000/shows-trakt')
       .then((response) => {
         setShows(response.data)
       })
@@ -99,9 +99,9 @@ const AllShows = (props) => {
   const loadOptions = (input) => {
     let url
     if (input) {
-      url = `http://${process.env.REACT_APP_BASE_URL}:4000/shows-trakt?query=${input}`
+      url = `http://localhost:4000/shows-trakt?query=${input}`
     } else {
-      url = `http://${process.env.REACT_APP_BASE_URL}:4000/shows-trakt`
+      url = 'http://localhost:4000/shows-trakt'
     }
     return axios
       .get(url)

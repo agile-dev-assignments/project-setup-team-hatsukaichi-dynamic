@@ -221,7 +221,7 @@ const MyShows = (props) => {
     if (input) {
       url = `http://localhost:4000/shows-trakt?query=${input}`
     } else {
-      url = `http://localhost:4000/shows-trakt`
+      url = 'http://localhost:4000/shows-trakt'
     }
     return axios
       .get(url)
